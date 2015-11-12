@@ -20,7 +20,7 @@ DUES
 Write a query that lists each member name, address, dues and location.
 
 SELECT name, address, dues, location FROM members LEFT JOIN organization ON members.id = organization.member_id
-  (assumption: Displays null for location/dues if member is not part of an org.  Assumes no duplicte records in Organization table.  Assumes that Members.id is primary key and that there is no way to identify duplicates in Members table.)
+  (assumptions: Displays null for location/dues if member is not part of an org.  Assumes no duplicate records in Organization table.  Assumes that Members.id is primary key and that there is no way to identify duplicates in Members table.)
   
 -------------------------------------------------------------------------------------------------------
 Write a SQL Query to pull all members that are over 45
