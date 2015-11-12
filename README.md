@@ -29,7 +29,7 @@ SELECT name FROM members WHERE age > 45
 
 --------------------------------------------------------------------------------------------------------
 
-3.     Write a SQL Query to pull all members that have a dues value of 0.
+Write a SQL Query to pull all members that have a dues value of 0.
 
 SELECT name FROM members LEFT JOIN organization ON members.id = organization.member_id WHERE dues = 0
   (assumption - if a member has zero dues for one organization but nonzero dues for another organization, the record is still returned)
